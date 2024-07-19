@@ -1,31 +1,31 @@
-// arithmetic operators = operands (values, variables, etc.)
-//                                         operators (+ - * /)
-//                                         ex. 11 = x + 5;
+// How to accept user input
 
-let students = 30
+// 1. EASY WAY = window prompt
+// 2. PROFESSIONAL WAY = HTML textbox
 
-students = students + 1 //?
-students = students - 1 //?
-students = students * 2 //?
-students = students / 2 //?
-//students = students ** 2;
-//let extraStudents = students % 3;
+// ------------------------ EASY WAY ------------------------
+// let username = window.prompt("What's your username?")
 
-console.log(students)
-//students += 1;
-//students -= 1;
-//students *= 2;
-//students /= 2;
-//students **= 2;
-//students %= 2;
+// console.log(username)
 
-//students++;
-//students--;
+// -------------------- PROFESSIONAL WAY --------------------
+// let username
 
-/*
-    operator precedence
-    1. parenthesis ()
-    2. exponents
-    3. multiplication & division & modulo
-    4. addition & subtraction
-*/
+// document.getElementById('mySubmit').onclick = function () {
+//     username = document.getElementById('myText').value
+//     document.getElementById('myH1').textContent = `Hello ${username}`
+// }
+
+const mySubmit = document.getElementById('mySubmit')
+const myH1 = document.getElementById('myH1')
+const myText = document.getElementById('myText')
+
+// mySubmit.addEventListener('click', function () {
+//     const username = myText('myText').value
+//     myH1.textContent = `Hello ${username}`
+// })
+
+mySubmit.addEventListener('click', () => {
+    const username = myText.value
+    myH1.textContent = `Hello ${username}`
+})
