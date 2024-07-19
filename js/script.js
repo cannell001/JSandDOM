@@ -1,23 +1,10 @@
-console.log(`I like pizza!`)
+// variable = A container that stores a value.
+// Behaves as if it were the value it contains.
 
-console.dir(document.body.style)
+let fullName = 'Bro Code'
+let age = 25
+let isStudent = false
 
-document.body.style.backgroundColor = 'hsl(0,0%,15%)'
-document.body.style.color = 'white'
-
-window.alert(`This is an alert!`)
-
-window.alert(`I like pizza!`)
-
-document.getElementById('myH1').textContent = `Hello`
-
-document.getElementById('myP').textContent = `I like pizza!`
-
-// This is a comment
-
-/*
-    This
-    is
-    a
-    comment
-*/
+document.getElementById('p1').textContent = `Your name is ${fullName}`
+document.getElementById('p2').textContent = `You are ${age} years old`
+document.getElementById('p3').textContent = `Enrolled: ${isStudent}`
