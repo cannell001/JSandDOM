@@ -6,12 +6,20 @@ document.getElementById('createSquare').addEventListener('click', function () {
     square.style.backgroundColor = '#f0f0f0' // Initial color
     document.body.appendChild(square)
 
+    document.getElementById('colorInput').disabled = false
     document.getElementById('colorSquare').disabled = false
 })
 
+// document.getElementById('colorSquare').addEventListener('click', function () {
+//     const square = document.getElementById('square')
+//     if (square) {
+//         square.style.backgroundColor = 'red'
+//     }
+
 document.getElementById('colorSquare').addEventListener('click', function () {
+    const color = document.getElementById('colorInput').value
     const square = document.getElementById('square')
     if (square) {
-        square.style.backgroundColor = 'red'
+        square.style.backgroundColor = color
     }
 })
